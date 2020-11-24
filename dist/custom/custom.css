@@ -1,0 +1,33 @@
+i {
+  margin-right: 0.5em;
+  font-size: 1em; }
+
+.reveal .container {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: start; }
+  .reveal .container * {
+    text-align: start; }
+  .reveal .container p {
+    margin: 0; }
+  .reveal .container ul {
+    margin: 0; }
+
+.side-by-side {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+ol {
+  counter-reset: item; }
+
+li {
+  display: block; }
+
+ol li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item; }
+
+.greyed {
+  color: #93a1a1; }
