@@ -1,0 +1,77 @@
+<section>
+    <section>
+        <div class="container">
+            <h2>Vaak voorkomende patronen voor domein services</h2>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Facade:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-unlink fa-fw"></i>Vermindert complexiteit</li>
+                    <li><i class="fas fa-compress-arrows-alt fa-fw"></i>Bundelt een proces</li>
+                </ul>
+            </div>
+        </div>
+        <aside class="notes">
+            Een facade wordt gebruikt om een complex subsysteem een gemakkelijk te gebruiken interface te geven.
+            Hierdoor moet de developer niet telkens opnieuw weten wat elke substap is van dit systeem maar kan dit door
+            vragen aan de facede
+        </aside>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Resource/controller:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-compress-arrows-alt fa-fw"></i>Binnenkomende service</li>
+                    <li><i class="fas fa-dungeon fa-fw"></i>Beschermd uw domein</li>
+                </ul>
+                <div class="fragment fade-in" style="font-size: 0.8em">
+                    <img src="slides/story-design/diagrammen/voorbeeld-controller.svg">
+                </div>
+            </div>
+        </div>
+        <aside class="notes">
+            Een Resource of controller wordt gebruikt om te bepalen wat er binnen buiten gaat vanuit het systeem
+        </aside>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Repository:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-save fa-fw"></i>Abstractie voor het persisteren van data</li>
+                </ul>
+                <div class="fragment fade-in" style="font-size: 0.8em">
+                    <img src="slides/story-design/diagrammen/voorbeeld-repository.svg">
+                </div>
+            </div>
+        </div>
+        <aside class="notes">
+            Een Repository is een abstractie voor het persisteren van Data
+        </aside>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Gateway:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-external-link-alt fa-fw"></i>Abstractie voor externe systemen</li>
+                </ul>
+                <div class="fragment fade-in" style="font-size: 0.8em">
+                    <img src="slides/story-design/diagrammen/voorbeeld-gateway.svg">
+                </div>
+            </div>
+        </div>
+        <aside class="notes">
+            Een Repository is een abstractie voor het persisteren van Data
+        </aside>
+    </section>
+    <section data-external-replace="../helpers/oefening.html"></section>
+</section>

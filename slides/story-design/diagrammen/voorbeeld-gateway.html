@@ -1,0 +1,23 @@
+<pre>
+    <code class="language-plantuml">
+        @startuml
+        skinparam monochrome reverse
+        skinparam backgroundColor transparent
+        skinparam handwritten true
+        skinparam defaultFontSize 15
+        skinparam arrowThickness 3
+        hide circle
+        hide members
+        allowmixing
+
+        class client
+        class gateway
+        cloud externalSystem
+
+        client -d-> gateway
+        gateway -u-> client
+        gateway -r-> externalSystem
+        externalSystem --> gateway
+        @enduml
+    </code>
+</pre>

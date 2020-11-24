@@ -1,0 +1,39 @@
+<pre>
+    <code class="language-plantuml">
+        @startuml
+        skinparam monochrome reverse
+        skinparam backgroundColor transparent
+        skinparam handwritten true
+        skinparam defaultFontSize 20
+        hide members
+        hide circle
+
+        actor admin
+        actor Dossierbeheerder
+
+        rectangle DossierVerkweringsEenheid [
+            **DossierVerwerkingsEenheid**
+
+            Verwerking van de dossiers
+        ]
+
+        rectangle ad [
+            **Active directory**
+
+            Beheer van de gebruikers
+        ]
+
+        rectangle Email[
+            **Email**
+
+            Versturen van de e-mails
+        ]
+
+        DossierVerkweringsEenheid --> ad
+        DossierVerkweringsEenheid --> Email
+        admin --> DossierVerkweringsEenheid
+        Dossierbeheerder --> DossierVerkweringsEenheid
+
+        @enduml
+    </code>
+</pre>

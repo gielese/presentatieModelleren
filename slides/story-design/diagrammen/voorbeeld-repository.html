@@ -1,0 +1,26 @@
+<pre>
+    <code class="language-plantuml">
+        @startuml
+        skinparam monochrome reverse
+        skinparam backgroundColor transparent
+        skinparam handwritten true
+        skinparam defaultFontSize 15
+        skinparam arrowThickness 3
+        hide circle
+        hide members
+        allowmixing
+
+        class client
+        class repository
+        database db
+        folder dir
+
+        client -d-> repository
+        repository -u-> client
+        repository -r-> db
+        repository -l-> dir
+        db --> repository
+        dir --> repository
+        @enduml
+    </code>
+</pre>
