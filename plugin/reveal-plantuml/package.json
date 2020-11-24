@@ -1,0 +1,60 @@
+{
+  "_from": "reveal-plantuml",
+  "_id": "reveal-plantuml@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-FWwPRA/GimnTdVW/WQ2R48Gv++t3hY76bnDlG72U/uF8PJNh/vmkMu0LB94yHXQY70YFT2sUsxsIF6YrpBd72w==",
+  "_location": "/reveal-plantuml",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "reveal-plantuml",
+    "name": "reveal-plantuml",
+    "escapedName": "reveal-plantuml",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/reveal-plantuml/-/reveal-plantuml-1.0.2.tgz",
+  "_shasum": "622da67924519d71b9c12e91bf04091d3d4924bb",
+  "_spec": "reveal-plantuml",
+  "_where": "/Users/seppeg/IdeaProjects/presentatieModelleren",
+  "author": {
+    "name": "Ivan Szkiba"
+  },
+  "bugs": {
+    "url": "https://github.com/reveal-plantuml/reveal-plantuml.github.io/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A reveal.js plugin that allow using PlantUML diagrams on slides.",
+  "devDependencies": {
+    "plantuml-encoder": "^1.4.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://reveal-plantuml.github.io",
+  "keywords": [
+    "reveal",
+    "plantuml"
+  ],
+  "license": "MIT",
+  "main": "dist/reveal-plantuml.min.js",
+  "name": "reveal-plantuml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reveal-plantuml/reveal-plantuml.github.io.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}

@@ -1,0 +1,56 @@
+{
+  "_from": "reveal_external",
+  "_id": "reveal_external@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-55RWavFwNjTYYlLkxVH4+P4VngoaN2qvoW69p1aHvS7Az47oehRlb2zetuUeYsAaiNFgjwWw07EODRxGgKXkYA==",
+  "_location": "/reveal_external",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "reveal_external",
+    "name": "reveal_external",
+    "escapedName": "reveal_external",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/reveal_external/-/reveal_external-1.3.0.tgz",
+  "_shasum": "a0b574308a0ff30ce5ab7c9e60637d6ce292c6c8",
+  "_spec": "reveal_external",
+  "_where": "/Users/seppeg/IdeaProjects/presentatieModelleren",
+  "author": {
+    "name": "Jan Schoepke"
+  },
+  "bugs": {
+    "url": "https://github.com/janschoepke/reveal_external/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Plugin for reveal.js to import external sections.",
+  "homepage": "https://github.com/janschoepke/reveal_external#readme",
+  "keywords": [
+    "reveal",
+    "revealjs",
+    "extension",
+    "external",
+    "reveal_external",
+    "bind",
+    "files"
+  ],
+  "license": "MIT",
+  "main": "external/external.js",
+  "name": "reveal_external",
+  "repository": {
+    "type": "git",
+    "url": "git+https://janschoepke@github.com/janschoepke/reveal_external.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.3.0"
+}

@@ -43,10 +43,10 @@
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
         dependencies: [
             {src: 'https://d3js.org/d3.v4.min.js'},
-            {src: 'node_modules/reveal.js-d3js/d3js.js'},
-            {src: 'node_modules/reveal-plantuml/dist/reveal-plantuml.min.js'},
+            {src: 'plugin/reveal.js-d3js/d3js.js'},
+            {src: 'plugin/reveal-plantuml/dist/reveal-plantuml.min.js'},
             {
-                src: 'node_modules/reveal_external/external/external.js',
+                src: 'plugin/reveal_external/external/external.js',
                 condition: function () {
                     return !!document.querySelector('[data-external],[data-external-replace]');
                 }
