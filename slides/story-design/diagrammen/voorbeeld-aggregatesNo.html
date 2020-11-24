@@ -1,0 +1,40 @@
+<pre>
+    <code class="language-plantuml">
+        @startuml
+        skinparam monochrome reverse
+        skinparam backgroundColor transparent
+        skinparam handwritten true
+        skinparam defaultFontSize 15
+        skinparam arrowThickness 3
+        hide circle
+        hide method
+
+        package Aggregate &lt;&lt;cloud&gt;&gt; {
+        class Voertuig {
+            VIN
+            merk
+            model
+        }
+        class Motor {
+            cilinderinhoud
+            pk
+        }
+        class Nummerplaat {
+            waarde
+        }
+        class Wiel {
+            merk
+        }
+        class WielGrootte {
+            diameter
+            breedte
+            breedteHoogteRatio
+        }
+        }
+        Voertuig -r-> "1" Motor
+        Voertuig --> "1" Nummerplaat
+        Voertuig --> "*" Wiel
+        Wiel --> "1" WielGrootte
+        @enduml
+    </code>
+</pre>

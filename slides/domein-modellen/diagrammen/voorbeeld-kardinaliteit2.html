@@ -1,0 +1,31 @@
+<pre>
+    <code class="language-plantuml">
+        @startuml
+        skinparam monochrome reverse
+        skinparam backgroundColor transparent
+        skinparam handwritten true
+        skinparam defaultFontSize 30
+        skinparam arrowThickness 1
+        skinparam nodesep 15
+        skinparam ranksep 120
+        skinparam arrowFontSize 15
+
+        class "Gebruiker" as ge1
+        class "Gebruiker" as ge2
+        class "Gebruiker" as ge3
+        class "Gebruiker" as ge4
+        class "Rekening" as re1
+        class "Rekening" as re2
+        class "Rekening" as re3
+        class "Rekening" as re4
+
+        ge1 ||--|| "1" re1
+        ge2 ||--o| "0..1" re2
+        ge3 ||--o{ "0..*" re3
+        ge4 ||--|{ "1..*" re4
+
+        hide members
+        hide circle
+        @enduml
+    </code>
+</pre>

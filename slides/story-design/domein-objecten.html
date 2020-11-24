@@ -1,0 +1,96 @@
+<section>
+    <section>
+        <div class="container">
+            <h2>Vaak voorkomende patronen voor domein objecten</h2>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Entiteiten:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-key fa-fw"></i>Identiteit</li>
+                    <li><i class="fas fa-balance-scale fa-fw"></i>Gelijkheid door identieit</li>
+                    <li><i class="fas fa-crosshairs fa-fw"></i>Focus op levenscyclus/gedrag</li>
+                </ul>
+                <ul class="fragment fade-in" style="font-size: 0.8em">
+                    <h5>Voorbeelden:</h5>
+                    <li><i class="fas fa-user fa-fw"></i>Persoon</li>
+                    <li><i class="fas fa-money-check-alt fa-fw"></i>Bank rekening</li>
+                    <li><i class="fas fa-box fa-fw"></i>Pakketje</li>
+                </ul>
+            </div>
+        </div>
+        <aside class="notes">
+            Entiteiten worden gekenmerkt door volgende:
+            Een identiteit -> Heeft of een natuurlijke key of een gegenereerde maar is uniek
+            Gelijkheid -> We spreken over dezelfde entiteit als hij dezelfde identiteit heeft, waardes kunnen immers
+            veranderen
+            Focus -> Ze hebben een levenscyclus en enkapselen specifiek gedrag.
+        </aside>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Value objecten:</h3>
+            <div class="side-by-side">
+                <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                    <h5>Kenmerken:</h5>
+                    <li><i class="fas fa-key fa-fw"></i>Geen identiteit</li>
+                    <li><i class="fas fa-balance-scale fa-fw"></i>Gelijkheid door waardes</li>
+                    <li><i class="fas fa-crosshairs fa-fw"></i>Focus op attributes</li>
+                </ul>
+                <ul class="fragment fade-in" style="font-size: 0.8em">
+                    <h5>Voorbeelden:</h5>
+                    <li><i class="fas fa-map-marked-alt fa-fw"></i>Coördinaten</li>
+                    <li><i class="fas fa-palette fa-fw"></i>Kleur</li>
+                    <li><i class="fas fa-address-card fa-fw"></i>Contact informatie</li>
+                </ul>
+            </div>
+        </div>
+        <aside class="notes">
+            Value objecten worden gekenmerkt door:
+            Geen identiteit -> Ze zijn niet veranderbaar en moeten niet uniek zijn
+            Gelijkheid -> Gelijk door de waardes, 5 euro = 5 euro
+            Focus -> heeft puur een focus op attributen en mogen niet veranderen
+        </aside>
+    </section>
+    <section>
+        <div class="container">
+            <h3>Context is alles</h3>
+        </div>
+    </section>
+</section>
+<section>
+    <section>
+        <div class="container">
+            <h2>Aggregates en aggregate roots</h2>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Aggregates:</h2>
+            <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                <h5>Kenmerken:</h5>
+                <li><i class="fas fa-project-diagram fa-fw"></i>Groep van objecten</li>
+                <li><i class="fas fa-lock fa-fw"></i>Bewaakt consistentie</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Aggregate root:</h2>
+            <ul class="fragment fade-in" style="width: 50%; font-size: 0.8em">
+                <h5>Kenmerken:</h5>
+                <li><i class="fas fa-lock fa-fw"></i>Beschermer van de aggregate</li>
+            </ul>
+        </div>
+    </section>
+    <section data-external-replace="../helpers/voorbeeld.html"></section>
+    <section>
+        <div data-external="diagrammen/voorbeeld-aggregatesNo.html"></div>
+    </section>
+    <section>
+        <div data-external="diagrammen/voorbeeld-aggregates.html"></div>
+    </section>
+</section>

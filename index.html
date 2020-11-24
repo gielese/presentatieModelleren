@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Modelleren</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/custom/custom.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <script src="https://kit.fontawesome.com/f5451e2556.js" crossorigin="anonymous"></script>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section id="intro" data-external-replace="slides/intro/index.html"></section>
+        <section id="domein-modellen" data-external-replace="slides/domein-modellen/index.html"></section>
+        <section id="story-design" data-external-replace="slides/story-design/index.html"></section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        dependencies: [
+            {src: 'https://d3js.org/d3.v4.min.js'},
+            {src: 'node_modules/reveal.js-d3js/d3js.js'},
+            {src: 'node_modules/reveal-plantuml/dist/reveal-plantuml.min.js'},
+            {
+                src: 'node_modules/reveal_external/external/external.js',
+                condition: function () {
+                    return !!document.querySelector('[data-external],[data-external-replace]');
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
